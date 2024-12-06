@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #4a90e2;
+  --text-color: #2c3e50;
+  --background-color: #f4f7f9;
+  --table-stripe: #f9fafb;
+  --border-color: #e1e8ed;
+  --delete-color: #ff4d4f;
+  --delete-hover-color: #ff6b6b;
+  --shadow-color: rgba(0, 0, 0, 0.07);
+}
+.main-content {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 20px;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px var(--shadow-color), 0 5px 10px var(--shadow-color);
+  padding: 2.5rem;
+  background: linear-gradient(135deg, white 0%, #f9fcff 100%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px var(--shadow-color), 0 8px 15px var(--shadow-color);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-container label {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.form-container button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.875rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #3a7bd5;
+  transform: translateY(-2px);
+}
+
+.form-container button:active {
+  transform: translateY(1px);
+}

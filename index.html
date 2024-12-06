@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="assets/logo.png" alt="Company Logo" class="logo" />
+          <span class="logo-text">Employee Management</span>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="header-right">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Search employees by name"
+            oninput="searchEmployees(this.value)"
+          />
+
+          <nav class="nav-menu">
+            <a href="#" onclick="loadPage('registration')">Register Employee</a>
+            <a href="#" onclick="loadPage('listing')">Employee List</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content"></main>
+
+    <footer class="footer">
+      <div class="footer-content">© 2024 Employee Management System</div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/employee-registration.js"></script>
+    <script src="js/employee-listing.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>
